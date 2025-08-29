@@ -8,25 +8,52 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
+	  background: url("background.jpg") no-repeat center center fixed;
+	  background-size: cover;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: center;
+	  min-height: 100vh;
     }
 
+    /* HEADER */
     header {
-      margin: 20px 0;
-      font-size: 2rem;
-      font-weight: bold;
-      color: #1e3a8a;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: linear-gradient(90deg, #3b82f6, #1e3a8a); /* bleu dégradé */
+      color: white;
     }
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 100%;
+    header .logo img {
+      height: 80px;
+      border-radius: 6px;
+    }
+
+    header .title {
+      text-align: right;
+    }
+
+    header .title h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    header .title p {
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    /* CONTENU CENTRAL */
+    .content {
+      margin: 40px auto;
+      max-width: 1000px;
     }
 
     .image-wrapper {
@@ -54,40 +81,84 @@
       max-width: 90%;
     }
 
-    @media (min-width: 768px) {
-      .container {
-        flex-direction: row;
-        justify-content: center;
-      }
-      .image-wrapper {
-        flex: 1;
-        max-width: 990px;
-      }
+    /* LIENS SOCIAUX */
+    .social-links {
+      margin: 25px 0;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: 0.3s;
+      color: #fff;
+    }
+
+    .discord {
+      background: #5865F2;
+    }
+
+    .discord:hover {
+      background: #4752C4;
+    }
+
+    .youtube {
+      background: #FF0000;
+    }
+
+    .youtube:hover {
+      background: #CC0000;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
+  <!-- HEADER -->
   <header>
-    EASTBLUE.NET – En cours de construction
+    <div class="logo">
+      <img src="cropped-Banniere-3.jpg" alt="Logo EastBlue">
+    </div>
+    <div class="title">
+      <h1>EASTBLUE.NET</h1>
+      <p>ONE PIECE, NOTRE PASSION DEPUIS 2002</p>
+	  <p>Rebuild en cours...</p>
+    </div>
   </header>
 
-  <div class="container">
+  <!-- CONTENU -->
+  <div class="content">
     <div class="image-wrapper">
-      <img src="regardetoi.jpg" alt="Site en construction">
-      <div class="overlay-text">
-        ...  
-        
-      </div>
-	  
+      <img src="gna.jpg" alt="Site en construction">
+
     </div>
-	
+
+    <div class="social-links">
+      <a href="https://discordapp.com/invite/kMTrNkj" class="discord" target="_blank">
+        🔗 Discord
+      </a>
+      <a href="https://www.youtube.com/@eastbluenet1048" class="youtube" target="_blank">
+        ▶️ YouTube
+      </a>
+    </div>
   </div>
-  
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© Eiichiro Oda / Shueisha - Tous droits réservés</p>
+  </footer>
 </body>
-<footer>
-  <p>© Eiichiro Oda / Shueisha - Tous droits réservés</p>
-</footer>
-
-
 </html>
-
