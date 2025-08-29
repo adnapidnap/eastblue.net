@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EASTBLUE.NET - En construction</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    header {
+      margin: 20px 0;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #1e3a8a;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+    }
+
+    .image-wrapper {
+      position: relative;
+      max-width: 100%;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      max-width: 90%;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        justify-content: center;
+      }
+      .image-wrapper {
+        flex: 1;
+        max-width: 990px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    EASTBLUE.NET – En cours de construction
+  </header>
+
+  <div class="container">
+    <div class="image-wrapper">
+      <img src="regardetoi.jpg" alt="Site en construction">
+      <div class="overlay-text">
+        Site web en cours de rénovation...  
+        
+      </div>
+	  
+    </div>
+	
+  </div>
+  
+</body>
+<footer>
+  <p>© Eiichiro Oda / Shueisha - Tous droits réservés</p>
+</footer>
+
+
+</html>
