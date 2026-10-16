@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>quelques gifs – EastBlue.net</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="pagefind/pagefind-ui.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="site-banner">
+  <img src="assets/images/banniere.png" alt="EastBlue.net">
+</div>
+<aside class="discord-sidebar">
+  <p class="discord-msg">Forum inactif, rejoignez-nous sur Discord</p>
+  <iframe src="https://discord.com/widget?id=202437872714907648&theme=dark"
+          width="350" height="500"
+          allowtransparency="true" frameborder="0"
+          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+  </iframe>
+</aside>
+<header class="site-header" data-pagefind-ignore>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-name">EastBlue.net</span>
+    </a>
+    <div class="header-right">
+      <button class="search-toggle"
+              onclick="document.getElementById('search-overlay').classList.toggle('active')"
+              aria-label="Rechercher">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">Accueil</a>
+          <span class="sep">›</span>
+          <span>Eastblue.net</span>
+          <span class="sep">›</span>
+          <span>Site et forum</span>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="main-content">
+  <div class="container">
+
+<div class="page-header">
+  <h1 class="page-title" data-pagefind-meta="title">quelques gifs</h1>
+  <div class="topic-meta-bar">
+    <span>par <strong>inconnu</strong></span>
+    <span>·</span>
+    <span>1 réponse</span>
+    <span>·</span>
+    <span>1612 vues</span>
+    
+    
+  </div>
+</div>
+
+
+<div class="posts-list">
+<article class="post" id="post-188 682" data-pagefind-body>
+  <div class="post-sidebar">
+    <div class="post-avatar">
+        <div class="avatar-placeholder">?</div>
+    </div>
+    <div class="post-author-name" data-pagefind-meta="author">inconnu</div>
+      <div class="post-rank">Moussaillon</div>
+    <div class="post-count">0 messages</div>
+  </div>
+  <div class="post-body">
+    <div class="post-header-row">
+      <time class="post-time" datetime="2009-02-11">
+        11/02/2009 à 20:09
+      </time>
+      <a href="#post-188 682" class="post-anchor">#188 682</a>
+    </div>
+    <div class="post-content" data-pagefind-meta="content">
+      j'ai trouvé quelques gifs de one piece : <br><img src="http://i199.photobucket.com/albums/aa276/luffymaster1234/21luffyvszorohv3.gif" alt="" loading="lazy" class="post-img"><br><img src="http://i268.photobucket.com/albums/jj31/warung_indizz/crewsjollyroger.gif" alt="" loading="lazy" class="post-img"><br><img src="http://i107.photobucket.com/albums/m297/Zolo2Hot/One%20Piece%20icons/7c3f4c9f.gif" alt="" loading="lazy" class="post-img"><br><img src="http://doanimation.files.wordpress.com/2007/04/luffy_attack_v21.gif" alt="" loading="lazy" class="post-img"><br><img src="http://i31.tinypic.com/33wlh0p.gif" alt="" loading="lazy" class="post-img"><br><img src="http://www.volonte-d.com/gifs/luffy06.gif" alt="" loading="lazy" class="post-img"><br><img src="http://members.iinet.net.au/~tjunction/images/luffy.gif" alt="" loading="lazy" class="post-img"><br><img src="http://etudiant.univ-mlv.fr/~hnguye10/luffy.gif" alt="" loading="lazy" class="post-img"><br>^^
+    </div>
+  </div>
+</article>
+</div>
+
+
+<div class="back-link">
+  <a href="forum-4.html">← Retour au forum</a>
+</div>
+
+  </div>
+</main>
+
+<footer class="site-footer" data-pagefind-ignore>
+  <div class="container">
+    <span>Archive statique générée depuis phpBB3</span>
+  </div>
+</footer>
+
+<div id="search-overlay" class="search-overlay">
+  <div class="search-box">
+    <div id="search"></div>
+  </div>
+  <div class="search-backdrop"
+       onclick="document.getElementById('search-overlay').classList.remove('active')">
+  </div>
+</div>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape')
+      document.getElementById('search-overlay').classList.remove('active');
+  });
+  new PagefindUI({
+    element: "#search",
+    showImages: false,
+    excerptLength: 30,
+    resetStyles: false,
+    translations: {
+      placeholder: "Rechercher dans le forum…",
+      zero_results: "Aucun résultat pour [SEARCH_TERM]",
+      clear_search: "Réinitialiser",
+      load_more: "Voir plus de résultats",
+      search_label: "Rechercher"
+    }
+  });
+});
+</script>
+
+</body>
+</html>
